@@ -28,56 +28,56 @@ results = []
 mean =  71.438090582  # mean
 sigma = 37.34277352  # sqrt of var
 
-fp = open("n=10.txt", 'r')
+fp = open("estimates/n=10.txt", 'r')
 lines = fp.readlines()
 n10 = []
 for i in range(0, len(lines)):
     someString=str(lines[i][5:-2])
     n10.append(someString)
 
-fp = open("n=30.txt", 'r')
+fp = open("estimates/n=30.txt", 'r')
 lines = fp.readlines()
 n30 = []
 for i in range(0, len(lines)):
     someString=str(lines[i][5:-2])
     n30.append(someString)
 
-fp = open("n=50.txt", 'r')
+fp = open("estimates/n=50.txt", 'r')
 lines = fp.readlines()
 n50 = []
 for i in range(0, len(lines)):
     someString=str(lines[i][5:-2])
     n50.append(someString)
 
-fp = open("n=100.txt", 'r')
+fp = open("estimates/n=100.txt", 'r')
 lines = fp.readlines()
 n100 = []
 for i in range(0, len(lines)):
     someString=str(lines[i][6:-2])
     n100.append(someString)
 
-fp = open("n=150.txt", 'r')
+fp = open("estimates/n=150.txt", 'r')
 lines = fp.readlines()
 n150 = []
 for i in range(0, len(lines)):
     someString=str(lines[i][6:-2])
     n150.append(someString)
 
-fp = open("n=250.txt", 'r')
+fp = open("estimates/n=250.txt", 'r')
 lines = fp.readlines()
 n250 = []
 for i in range(0, len(lines)):
     someString=str(lines[i][6:-2])
     n250.append(someString)
 
-fp = open("n=500.txt", 'r')
+fp = open("estimates/n=500.txt", 'r')
 lines = fp.readlines()
 n500 = []
 for i in range(0, len(lines)):
     someString=str(lines[i][6:-2])
     n500.append(someString)
 
-fp = open("n=1000.txt", 'r')
+fp = open("estimates/n=1000.txt", 'r')
 lines = fp.readlines()
 n1000 = []
 for i in range(0, len(lines)):
@@ -127,28 +127,28 @@ for n in mN:
 
     #reading z-values into a file to archive
     if(n==10):
-        with open('Zn=10.txt', 'w') as file:
+        with open('z-values/Zn=10.txt', 'w') as file:
             file.write('\n'.join(str(value) for value in ycord))
     if (n == 30):
-        with open('Zn=30.txt', 'w') as file:
+        with open('z-values/Zn=30.txt', 'w') as file:
             file.write('\n'.join(str(value) for value in ycord))
     if (n == 50):
-        with open('Zn=50.txt', 'w') as file:
+        with open('z-values/Zn=50.txt', 'w') as file:
             file.write('\n'.join(str(value) for value in ycord))
     if (n == 100):
-        with open('Zn=100.txt', 'w') as file:
+        with open('z-values/Zn=100.txt', 'w') as file:
             file.write('\n'.join(str(value) for value in ycord))
     if (n == 150):
-        with open('Zn=150.txt', 'w') as file:
+        with open('z-values/Zn=150.txt', 'w') as file:
             file.write('\n'.join(str(value) for value in ycord))
     if (n == 250):
-        with open('Zn=250.txt', 'w') as file:
+        with open('z-values/Zn=250.txt', 'w') as file:
             file.write('\n'.join(str(value) for value in ycord))
     if (n == 500):
-        with open('Zn=500.txt', 'w') as file:
+        with open('z-values/Zn=500.txt', 'w') as file:
             file.write('\n'.join(str(value) for value in ycord))
     if (n == 1000):
-        with open('Zn=1000.txt', 'w') as file:
+        with open('z-values/Zn=1000.txt', 'w') as file:
             file.write('\n'.join(str(value) for value in ycord))
 
     points = [0, 0, 0, 0, 0, 0, 0]
